@@ -1,3 +1,4 @@
+  
     * {
       margin: 0;
       padding: 0;
@@ -8,18 +9,21 @@
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       height: 100vh;
-      background-color: #f4f4f4;
+      background: #faf9f8;
+      overflow: hidden;
     }
 
-    /* Sidebar */
     .sidebar {
-      width: 250px;
-      background-color: #222;
-      color: #fff;
+      width: 280px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      color: #1d1e20;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     .sidebar img {
@@ -27,12 +31,13 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.6);
       margin-bottom: 20px;
-      border: 3px solid #fff;
     }
 
     .sidebar h2 {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      color: #1d1e20;
     }
 
     .nav-links {
@@ -41,28 +46,27 @@
     }
 
     .nav-links li {
-      margin: 15px 0;
+      margin: 10px 0;
     }
 
     .nav-links a {
-      color: #ccc;
       text-decoration: none;
-      font-size: 16px;
+      color: #1d1e20;
+      padding: 10px 15px;
       display: block;
-      padding: 10px;
-      transition: 0.3s;
+      border-radius: 10px;
+      transition: background 0.3s ease;
     }
 
     .nav-links a:hover {
-      background-color: #444;
-      color: #fff;
+      background: rgba(255, 255, 255, 0.3);
     }
 
-    /* Content */
     .main-content {
       flex: 1;
       padding: 40px;
       overflow-y: auto;
+      color: #333;
     }
 
     section {
@@ -71,11 +75,53 @@
 
     section h2 {
       margin-bottom: 10px;
-      color: #333;
+      font-size: 24px;
     }
 
-    section p {
+    section p, section ul {
+      font-size: 16px;
       line-height: 1.6;
-      color: #555;
     }
- 
+
+    ul li {
+      margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+      }
+
+      .sidebar h2, .sidebar img {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+    }
+    .hero-photo {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
