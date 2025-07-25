@@ -7,12 +7,80 @@
     nav ul li { margin: 0 15px; }
     nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
     nav ul li a:hover { color: #00bcd4; }
+     .section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #00bcd4, #4caf50);
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 2px;
+  }
     h1, h2 { margin-bottom: 20px; }
     .hero { text-align: center; background: #00bcd4; color: white; padding: 100px 20px; }
-    .hero h1 { font-size: 3em; }
-    .projects img { width: 100%; max-width: 300px; border-radius: 10px; }
-    .skills ul, .projects ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; padding: 0; }
-    .skills li, .projects li { background: #eee; padding: 10px 15px; border-radius: 5px; }
-    footer { text-align: center; padding: 30px; background: #222; color: #fff; }
-    
+    .hero h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 4em;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+    .projects img { 
+      width: 100%; max-width: 300px; border-radius: 10px;
+     }
+    #skills {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.split-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.skill-block {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.skill-block img {
+  width: 60px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.skill-block h3 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.skill-block ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+    #education {
+  padding-top: 60px;
+}
+
+.education-item {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.education-item h3 {
+  margin-bottom: 5px;
+  color: #00bcd4;
+}
+
+
   
